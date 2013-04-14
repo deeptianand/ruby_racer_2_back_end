@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game on!</title>
+</head>
+<table class="racer_table" data-gameid="<%=@game.id%>" >
+  <tr id="player1_strip" data-id="<%=@player1.id%>" data-name="<%=@player1.name%>">
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr id="player2_strip" data-id="<%=@player2.id%>" data-name="<%=@player2.name%>">
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<div>
+<button id="play_again">Play again</buton>
+</div>
+<p id="winner"></p>
+<div>
+<a href='/'><button id="start_new_game"> Start_new_game </button></a>
+</div>
+<div>
+<a href="/results/<%=@game.id%>"><button id="stats">Stats!</button></a>
+</div>
+</html>

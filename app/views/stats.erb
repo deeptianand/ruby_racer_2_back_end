@@ -1,0 +1,15 @@
+<div class="container">
+<h3> A snapshot of your performances!</h3>
+<% if @winner.name == @player1.name%>
+<i><%=@winner.name%></i> won in <%=@game[:time_taken_to_finish]%> milliseconds
+<div>
+<i><%=@player2.name%></i> lost miserably!
+</div>
+<%end%>
+<% if @winner.name == @player2.name%>
+<i><%=@winner.name%></i> won in <%=@game[:time_taken_to_finish]%> milliseconds
+<div>
+<i><%=@player1.name%></i> lost miserably!
+</div>
+<%end%>
+</div>

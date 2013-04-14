@@ -1,0 +1,29 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+.racer_table td {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+}
+
+.racer_table td.active {
+  background-color: black;
+}
+
+#winner {
+	font-size: 12px;
+	color:red;
+}
+
+#play_again {
+	margin: 60px 0px 0 100px  ;
+}
